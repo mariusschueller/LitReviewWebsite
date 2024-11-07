@@ -33,11 +33,14 @@
         <br><br>
         <input id="sentence-input">
         <br>
-        <button>Enter</button>
+        <button onclick="yearEntered()">Enter</button>
     </div>
 
-    <!-- <p>Computer's guess: <span>1776</span></p>
-    <button>Again</button>-->
+    <div id="computer-guess">
+        <p>Computer's guess: <span>1776</span></p>
+        <button onclick="location.reload()">Again</button>
+    </div> 
+
     <button onclick="navigateToHome()">Back to Home</button> 
     <script src="navigation.js"></script>
     <script src="compete.js"></script>

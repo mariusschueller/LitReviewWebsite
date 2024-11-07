@@ -47,3 +47,7 @@ button {
 #user-sentence-input{
     display: none;
 }
+
+#computer-guess {
+    display: none;
+}
