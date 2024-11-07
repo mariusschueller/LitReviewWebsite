@@ -13,36 +13,41 @@
 <body>
 
 
+    <div class="header-bar">
+        <!-- LOGO HERE -->
+        <h1>Lit Website</h1>
+        <!-- <p class="sub-title">Compete against our AI model!&nbsp;</p> -->
 
-    <h1>Lit Website</h1>
-    <p class="sub-title">Compete against our AI model!</p>
-
-
-    <button id="get-sentence" onclick="getSentence()">Get Sentence</button>
-    <br>
-
-    <div id="sentence-section">
-        <span class="sentence">Loading...</span>
-        <br><br>
-        
     </div>
 
-    <!-- Show when sentence is shown -->
-    <div id="user-sentence-input">
-        <br>
-        <span>What year was this written?</span>
-        <br><br>
-        <input id="sentence-input">
-        <br>
-        <button onclick="yearEntered()">Enter</button>
+    <div class="container">
+        <div class="content">
+            <button id="get-sentence" onclick="getSentence()">Get Sentence</button>
+            <br>
+    
+            <div id="sentence-section">
+                <span class="sentence">Loading...</span>
+                <br><br>
+            </div>
+    
+            <!-- Show when sentence is shown -->
+            <div id="user-sentence-input">
+                <br>
+                <span>What year was this written?</span>
+                <br><br>
+                <input id="sentence-input">
+                <br>
+                <button onclick="yearEntered()">Enter</button>
+            </div>
+    
+            <div id="computer-guess">
+                <p>Computer's guess: <span>1776</span></p>
+                <button onclick="location.reload()">Again</button>
+            </div>
+        </div>
     </div>
-
-    <div id="computer-guess">
-        <p>Computer's guess: <span>1776</span></p>
-        <button onclick="location.reload()">Again</button>
-    </div> 
-
-    <button onclick="navigateToHome()">Back to Home</button> 
+    
+    <button onclick="navigateToHome()">Back to Home</button>
     <script src="navigation.js"></script>
     <script src="compete.js"></script>
 </body>
