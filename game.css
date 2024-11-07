@@ -69,3 +69,7 @@ button {
     background-color: #f9f9f9;
 }
 
+#credit {
+    position: absolute;
+    bottom: 0px;
+}
