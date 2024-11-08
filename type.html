@@ -21,18 +21,24 @@
     <div class="container">
         <div class="content">
 
+        <div id="type-sentence">
             <span>Type a sentence:</span>
             <br><br>
-            <textarea></textarea>
+            <textarea id="sentence-input"></textarea>
             <br>
-            <button>Enter</button>
-            
+            <button onclick="getSentence()">Enter</button>
+        </div>
+
+        <div id="year-found">
+            <p>Loading...</p>
+        </div>
 
         </div>
     </div>
     <button onclick="navigateToHome()">Back to Home</button>
     <p id="credits">Made by Stewart Geisz, Marcus Kamen, Meraj Khan, and Marius Schueller</p>
     <script src="navigation.js"></script>
+    <script src="type.js"></script>
 </body>
 
 </html>

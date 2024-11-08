@@ -41,7 +41,7 @@ button {
 .header-bar {
     display: flex;
     align-items: start;
-    width: 100%; /* Or the desired width */
+    width: 100%;
     margin-top: 0px;
     padding-top: 0px;
     background-color: azure;
@@ -57,7 +57,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh; /* Full viewport height to center vertically */
+    height: 70vh; 
 }
 
 .content {
