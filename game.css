@@ -33,10 +33,6 @@ button {
     font-size: 20px;
 }
 
-#get-sentence {
-    /* display: none; */
-}
-
 .header-bar {
     display: flex;
     align-items: start;

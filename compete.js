@@ -1,5 +1,8 @@
 let year_predicted = -1;
 let year_written = -1;
+let title = "";
+let author = "";
+
 
 function getAISentence(){
     document.getElementById('sentence-section').style.display = "block";
@@ -25,7 +28,8 @@ function getAISentence(){
             document.getElementById('sentence').innerText = result.random_sentence;
             year_predicted = result.prediction;
             year_written = result.actual;
-
+            title = result.title;
+            author = result.author;
         }
     })
     .catch(error => {
@@ -38,6 +42,7 @@ function yearEntered(){
     document.getElementById('guess-response').style.display = "block";
     document.getElementById('computer-guess-output').innerText = year_predicted;
     document.getElementById('year-output').innerText = year_written;
+    document.getElementById('title-and-author').innerText = title + " by " + author;
 }
 
 document.getElementById("sentence-input").addEventListener("keydown", function(event) {
