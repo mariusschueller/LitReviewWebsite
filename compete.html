@@ -27,7 +27,7 @@
             <br>
     
             <div id="sentence-section">
-                <span class="sentence">Loading...</span>
+                <span id="sentence">Loading...</span>
                 <br><br>
             </div>
     
@@ -42,9 +42,12 @@
             </div>
             
     
-            <div id="computer-guess">
-                <p>Computer's guess: <span>1776</span></p>
+            <div id="guess-response">
+                <p>Computer's guess: <span id="computer-guess-output">loading</span></p>
+                <p>Acutal year: <span id="year-output">loading</span></p>
+                
                 <button onclick="location.reload()">Again</button>
+                
             </div>
         </div>
     </div>
