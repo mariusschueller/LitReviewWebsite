@@ -25,7 +25,8 @@ function getAISentence(){
             document.getElementById('sentence').innerText = 'Error: ' + result.error;
         } else {
             // Update the "year-found" element with the prediction result
-            document.getElementById('sentence').innerText = result.random_sentence;
+            document.getElementById('sentence').innerText = result.random_sentence
+
             year_predicted = result.prediction;
             year_written = result.actual;
             title = result.title;
@@ -40,6 +41,9 @@ function getAISentence(){
 }
 function yearEntered(){
     document.getElementById('guess-response').style.display = "block";
+    document.getElementById('user-sentence-input').style.display = "none";
+    document.getElementById('user-guess-container').style.display = "block";
+    document.getElementById('user-guess').innerText = "User Guess: " + document.getElementById('sentence-input').value;
     document.getElementById('computer-guess-output').innerText = year_predicted;
     document.getElementById('year-output').innerText = year_written;
     document.getElementById('title-and-author').innerText = title + " by " + author;
